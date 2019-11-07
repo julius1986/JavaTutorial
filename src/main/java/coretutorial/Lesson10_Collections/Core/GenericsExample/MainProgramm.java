@@ -1,4 +1,4 @@
-package coretutorial.Lesson10_Collections_Core.GenericsExample;
+package coretutorial.Lesson10_Collections.Core.GenericsExample;
 
 import java.io.*;
 import java.util.*;

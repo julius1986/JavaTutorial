@@ -1,4 +1,4 @@
-package coretutorial.Lesson10_Collections_Core.CollectionExample.MapExample;
+package coretutorial.Lesson10_Collections.Core.MapExample;
 
 import java.util.HashMap;
 import java.util.Iterator;

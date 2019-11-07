@@ -1,4 +1,4 @@
-package coretutorial.Lesson10_Collections_ForTest;
+package coretutorial.Lesson10_Collections.ForTest;
 
 import java.util.ArrayList;
 import java.util.List;

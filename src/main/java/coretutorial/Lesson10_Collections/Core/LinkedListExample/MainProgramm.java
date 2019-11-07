@@ -1,4 +1,4 @@
-package coretutorial.Lesson10_Collections_Core.CollectionExample.LinkedListExample;
+package coretutorial.Lesson10_Collections.Core.LinkedListExample;
 
 import java.util.Iterator;
 import java.util.LinkedList;

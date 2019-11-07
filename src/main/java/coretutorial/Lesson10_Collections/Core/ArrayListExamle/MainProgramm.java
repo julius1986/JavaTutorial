@@ -1,4 +1,4 @@
-package coretutorial.Lesson10_Collections_Core.CollectionExample.ArrayListExamle;
+package coretutorial.Lesson10_Collections.Core.ArrayListExamle;
 
 import java.util.ArrayList;
 import java.util.Iterator;

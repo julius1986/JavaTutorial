@@ -1,4 +1,4 @@
-package coretutorial.Lesson10_Collections_Core.CollectionExample.MapExample;
+package coretutorial.Lesson10_Collections.Core.MapExample;
 
 /**
  * Created by Yuliy on 12.01.2017.

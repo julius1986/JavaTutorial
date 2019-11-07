@@ -1,4 +1,4 @@
-package coretutorial.Lesson10_Collections_Core.IOStreamsExample;
+package coretutorial.Lesson10_Collections.Core.IOStreamsExample;
 
 import java.io.BufferedReader;
 import java.io.IOException;
