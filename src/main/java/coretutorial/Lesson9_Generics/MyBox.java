@@ -1,4 +1,4 @@
-package coretutorial.Lesson10_Collections.Core.GenericsExample;
+package coretutorial.Lesson9_Generics;
 
 /**
  * Created by Yuliy on 10.12.2016.
