@@ -44,6 +44,9 @@ import java.util.Set;
  *     
  *     Индекс корзины для ноды считается по формуле index = hashCode(key) & (n-1) где n - рзамер массива мапы
  *     по умолчанию равен 16.  & - Побитовый(поразрядный) оператор И
+ *	   	initCapacity = 16;
+ *		loadFactory = 0.75;
+ *		при достижении лимита количество корзинок увеличивается в 2 раза
  *
  * Корзина это ячейка массива с индексом элемента равного ХешКоду ключа по формуле.
  * В каждом элементе этого массива(корзины) находится список в который помещаются
@@ -87,6 +90,8 @@ public class MainProgramm {
 
         Set set = map1.entrySet();
         System.out.println(set);
+        
+        
         /*Выводим ключ и значение*/
         System.out.println("Выводим с помощью foreach Map.Entry");
         for (Map.Entry entry : map1.entrySet()) {
@@ -102,7 +107,7 @@ public class MainProgramm {
         }
 
 
-        /*удаление осуществляется через итератор и приветдение
+        /*удаление осуществляется через итератор и приведение
         * к EntrySet*/
         System.out.println("Выводим с помощью Iterator");
         Iterator iterator = map1.entrySet().iterator();

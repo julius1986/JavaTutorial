@@ -12,7 +12,8 @@ public class Arrays {
 		//*** ОДНОМЕРНЫЕ МАССИВЫ ***
 		//массивы можно обьявлять двумя способами.
 		int [] arr1 = new int[20]; // длина массива 20
-		int arr2[] = new int[20];
+		// по умолчанию заполняется 0, для ссылочных заполняется null
+		int arr2[] = new int[20]; 
 		
 		arr1[0] = 33;
 		System.out.println(arr1.length); // 20
