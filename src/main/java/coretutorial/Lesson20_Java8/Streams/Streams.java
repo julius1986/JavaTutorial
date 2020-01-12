@@ -269,6 +269,20 @@ public class Streams {
 		String[] sss = Stream.of(strS).flatMap(el->Arrays.asList(el.split(",")).stream()).toArray(String[]::new);
 		Stream.of(sss).peek(System.out::println).toArray();
 		
+		List<User> users = new ListOfUsers().getUsers();
+		List<User> res = users.stream()
+			.filter((user)->{return (user.getSalary()>1000 && user.getSalary()<1500);})
+			.collect(Collectors.toList());
+		res.stream().forEach(System.out::println);
+		//тут сделаем компаратор который фильтруем от меньшего к большему
+		int rrr = users.stream().max(new Comparator<User>() {
+			@Override
+			public int compare(User o1, User o2) {
+				// TODO Auto-generated method stub
+				return (int) (o1.getSalary() - o2.getSalary());
+			}
+		}).get().getSalary().intValue();
+		System.out.println(rrr);
 	}
 	
 }
