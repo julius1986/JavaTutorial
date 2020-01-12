@@ -275,19 +275,19 @@ public class Streams {
 			.collect(Collectors.toList());
 		res.stream().forEach(System.out::println);
 		//тут сделаем компаратор который фильтруем от меньшего к большему
-		int rrr = users.stream().max(new Comparator<User>() {
+		int resutl = users.stream().max(new Comparator<User>() {
 			@Override
 			public int compare(User o1, User o2) {
 				// TODO Auto-generated method stub
 				return (int) (o1.getSalary() - o2.getSalary());
 			}
 		}).get().getSalary().intValue();
-		System.out.println(rrr);
+		System.out.println(resutl);
 		
 		//тут создали свой компаратор при помощи лямбда выражений
 		Comparator<User> minToMaxSalary = (User u1, User u2) -> {return u1.getSalary().compareTo(u2.getSalary());};
-		rrr = users.stream().max(minToMaxSalary).get().getSalary().intValue();
-		System.out.println(rrr);
+		resutl = users.stream().max(minToMaxSalary).get().getSalary().intValue();
+		System.out.println(resutl);
 		
 		
 		
