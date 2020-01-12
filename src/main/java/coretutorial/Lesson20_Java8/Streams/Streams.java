@@ -283,6 +283,14 @@ public class Streams {
 			}
 		}).get().getSalary().intValue();
 		System.out.println(rrr);
+		
+		//тут создали свой компаратор при помощи лямбда выражений
+		Comparator<User> minToMaxSalary = (User u1, User u2) -> {return u1.getSalary().compareTo(u2.getSalary());};
+		rrr = users.stream().max(minToMaxSalary).get().getSalary().intValue();
+		System.out.println(rrr);
+		
+		
+		
 	}
 	
 }
