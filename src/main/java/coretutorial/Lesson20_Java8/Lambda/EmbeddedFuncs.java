@@ -69,7 +69,7 @@ public class EmbeddedFuncs {
 	}	
 	 */
 	Function<Integer, String> intToString = x -> x.toString();
-	BinaryOperator<Integer> mul = (x, y)-> x *y;
+	BinaryOperator<Integer> mul = (x, y)-> x * y;
 	String res = mul.andThen(intToString).apply(2, 30);
 	System.out.println(res);
 	
